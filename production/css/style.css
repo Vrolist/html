@@ -1,0 +1,19 @@
+r@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+}
+.headerbox{width:100%;}
+.header{width:80%;height:74px; background:url(../img/logo.gif) no-repeat;background-color:#0FC;}
+.nav{padding:20px 20px 0 0;}
+.nav ul{list-style:none; margin:0 0 0 40%;}
+.nav ul li{float:left;margin:0 10px;}
+.nav ul li a{width:40px; display:inline-block;height:30px;line-height:30px;text-decoration:none;}
+/*common*/
+.comwidth{width:800px;margin:0 auto; }
+
+
+.banner{
+	width:730px;height:206px;
+	background:url(../img/banner.jpg);
+	}

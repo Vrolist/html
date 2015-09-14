@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+
+.pic{
+	width:800px;
+	height:772px;
+	background:url(../img/pic.png);
+	}
