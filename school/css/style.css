@@ -3,6 +3,11 @@
     margin:0;
     padding:0;
 }
+body {
+    font: 14px/22px "Hiragino Sans GB","微软雅黑","宋体";
+    color: #333;
+    word-wrap: break-word;
+}
 .header{
     width:80%;
     height:74px;
@@ -85,4 +90,41 @@
 h2 {
     font: 14px/22px "Hiragino Sans GB","微软雅黑","宋体";
     font-family: "Hiragino Sans GB","微软雅黑","宋体";
+    width:auto;
+    text-align:center;
+}
+
+#lg {
+    width: 250px;
+    border: 1px solid #3FC4B0;
+    border-radius: 3px;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0px 0px 18px;
+    padding: 5px 15px;
+}
+
+.button {
+    width:100px;
+    height:30px;
+    padding:3px;
+    margin: auto;
+}
+
+.button_right {
+    float:right;
+}
+
+.button_left {
+    float:left;
+}
+
+#seach {
+    width:130px;
+    height:30px;
+}
+
+h2 {
+    
 }
