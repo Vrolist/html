@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>超酷时钟</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script>
+	window.onload=function()
+	{
+		var oClock=document.getElementById('clock');
+		var oImg1=getByClass(oClock,'img1');
+		var oSs=document.getElementById('ss');
+		var Arry=[
+			"one",
+			"two",
+			"three",
+			"four",
+			"five",
+			"six",
+			"seven"
+		];
+		function cick()
+		{
+			var time=new Date();	
+			var Month=time.getMonth()+1;
+			var xq=time.getDay();
+			var str=toStrin(time.getFullYear())+toStrin(Month)+toStrin(time.getDate())+toStrin(time.getHours())+toStrin(time.getMinutes())+toStrin(time.getSeconds());
+			for(var i=0;i<str.length;i++)
+			{
+				oImg1[i].src='images/'+str.charAt(i)+'.png';
+			}
+			oSs.src='images/'+Arry[xq-1]+'.png';
+		}
+		setInterval(cick,1000);
+		cick();
+	};
+	function getByClass(oParent,sClass)
+	{
+		var oEle=oParent.getElementsByTagName('*');
+		var aReslut=[];
+		for(var i=0;i<oEle.length;i++)
+		{
+			if(oEle[i].className==sClass)
+			{
+				aReslut.push(oEle[i]);
+			}
+		}
+		return aReslut;
+	}
+	function toStrin(obj)
+	{
+		if(obj<10)
+		{
+			return "0"+obj;
+		}
+		else
+		{
+			return ''+obj;
+		}
+	}
+</script>
+</head>
+<body>
+<div id="clock">
+	<div class="logo"><img src="images/title.png" width="195" alt="logo" /></div>
+	<div class="text1">
+    	<img class="img1" src="images/0.png" width="25" alt="0"/>
+        <img class="img1" src="images/0.png" width="25" alt="0" />
+        <img class="img1" src="images/0.png" width="25" alt="0" />
+        <img class="img1" src="images/0.png" width="25" alt="0" />
+        <img src="images/year.png" width="38" alt="" />
+        <img class="img1" src="images/0.png" width="25" alt="0" />
+        <img class="img1" src="images/0.png" width="25" alt="0" />
+        <img src="images/month.png" width="38" alt="" />
+        <img class="img1" src="images/0.png" width="25" alt="0" />
+        <img class="img1" src="images/0.png" width="25" alt="0" />
+        <img src="images/seven.png" width="38" alt="" />
+    </div>
+	<div class="text2">
+    	<img class="img1" src="images/0.png" width="25" alt="0" />
+        <img class="img1" src="images/0.png" width="25" alt="0" />
+        <img src="images/sign.png" width="25" alt="" />
+        <img class="img1" src="images/0.png" width="25" alt="0" />
+        <img class="img1" src="images/0.png" width="25" alt="0" />
+        <img src="images/sign.png" width="25" alt="" />
+        <img class="img1" src="images/0.png" width="25" alt="0" />
+        <img class="img1" src="images/0.png" width="25" alt="0" />
+        <img src="images/week.png" width="78" alt="" />
+        <img id="ss" src="images/one.png" width="38" alt="" />
+    </div>
+</div>
+</body>
+</html>

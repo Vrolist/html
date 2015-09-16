@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background:#309; 
+}
+
+#clock{width:500px;height:500px;margin:50px auto 0;text-align:center;}
+.logo{text-algin:center;padding:80px 0 30px;}
+.text1{padding-top:30px;}
+.text2{padding-top:30px;}

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Ye
+ * @email   www.673089899@qq.com
+ * @date    2015-07-24 23:55:30
+ * @version $Id$
+ */
+ 
+/*清零*/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;border:0;}
+body{font-size: 12px;font-family: '宋体' ,Arial, "Helvetica Neue", Helvetica, sans-serif;line-height:160%;}
+img{border:none;}
+ul,ol{list-style:none;}
+input,select,textarea{outline:none;}
+textarea{resize:none;}
+a{text-decoration:none;}
+
+/*清浮动*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
